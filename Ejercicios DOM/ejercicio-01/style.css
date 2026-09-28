@@ -1,0 +1,212 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #f4f7fb, #e8f4f8);
+    color: #1f2937;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+
+/* ==========================================
+   BOTÓN
+   ========================================== */
+
+.showme {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #034f87, #00b8d6);
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(3, 79, 135, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.showme:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(3, 79, 135, 0.3);
+}
+
+.showme:active {
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   TÍTULO
+   ========================================== */
+
+#pillado {
+    max-width: 900px;
+    margin: 0 auto 30px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    color: #034f87;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   POWER RANGERS
+   ========================================== */
+
+p {
+    max-width: 900px;
+    margin: 10px auto;
+
+    padding: 14px 18px;
+
+    background-color: white;
+
+    border-left: 5px solid #00b8d6;
+
+    border-radius: 6px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+p:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==========================================
+   POKÉMON
+   ========================================== */
+
+.pokemon {
+    display: inline-block;
+
+    margin: 20px 5px 10px;
+
+    padding: 12px 18px;
+
+    background-color: white;
+
+    color: #034f87;
+
+    border: 2px solid #d7eef3;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.pokemon:hover {
+    transform: translateY(-3px);
+
+    background-color: #e8f8fb;
+}
+
+
+/* ==========================================
+   PERSONAJES
+   ========================================== */
+
+[data-function="testMe"] {
+    display: inline-block;
+
+    margin: 20px 5px 0;
+
+    padding: 10px 16px;
+
+    background-color: #034f87;
+
+    color: white;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    box-shadow: 0 3px 8px rgba(3, 79, 135, 0.2);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+[data-function="testMe"]:hover {
+    transform: translateY(-2px);
+
+    background-color: #00b8d6;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    #pillado {
+        padding: 15px;
+    }
+
+    .pokemon,
+    [data-function="testMe"] {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .showme {
+        width: 100%;
+    }
+
+    .pokemon,
+    [data-function="testMe"] {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

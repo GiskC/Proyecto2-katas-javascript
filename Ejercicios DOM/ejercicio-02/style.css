@@ -1,0 +1,108 @@
+/* Configuración general */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7fb;
+    color: #263238;
+
+    line-height: 1.6;
+}
+
+
+/* Título */
+
+h2 {
+    max-width: 900px;
+    margin: 0 auto 30px;
+
+    padding-bottom: 12px;
+
+    color: #034f87;
+
+    border-bottom: 3px solid #00b8d6;
+}
+
+
+/* Párrafos */
+
+body > p {
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+
+/* Divs */
+
+body > div {
+    max-width: 900px;
+    min-height: 40px;
+
+    margin: 15px auto;
+    padding: 10px 0;
+
+    border-bottom: 1px solid #d5e1e6;
+}
+
+
+/* Divs con contenido */
+
+.fn-insert-here {
+    padding: 12px 15px;
+
+    background-color: #eaf7fa;
+
+    border-left: 4px solid #00b8d6;
+}
+
+
+/* Párrafos creados dentro de los div */
+
+.fn-insert-here p {
+    margin: 0;
+
+    color: #034f87;
+    font-weight: bold;
+}
+
+
+/* Lista */
+
+body > ul {
+    max-width: 900px;
+
+    margin: 25px auto;
+    padding-left: 25px;
+}
+
+body > ul li {
+    margin-bottom: 6px;
+}
+
+body > ul li::marker {
+    color: #00b8d6;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    h2,
+    body > p,
+    body > div,
+    body > ul {
+        width: 100%;
+    }
+}

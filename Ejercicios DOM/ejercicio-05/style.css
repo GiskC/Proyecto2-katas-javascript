@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #111827;
+    color: #f5f5f5;
+}
+
+
+/* Título */
+
+h1 {
+    margin: 0;
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #034f87
+    );
+
+    color: white;
+
+    font-size: 36px;
+}
+
+
+/* Contenedor de los álbumes */
+
+#albums-container {
+    width: 90%;
+    max-width: 800px;
+
+    margin: 40px auto;
+}
+
+
+/* Lista */
+
+#albums-container ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* Álbumes */
+
+#albums-container li {
+    margin-bottom: 15px;
+    padding: 18px 20px;
+
+    background-color: #1f2937;
+
+    border-left: 4px solid #00b8d6;
+    border-radius: 6px;
+
+    font-size: 18px;
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease;
+}
+
+#albums-container li:hover {
+    background-color: #273548;
+
+    transform: translateX(5px);
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    h1 {
+        padding: 30px 15px;
+        font-size: 28px;
+    }
+
+    #albums-container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    #albums-container li {
+        font-size: 16px;
+    }
+}
